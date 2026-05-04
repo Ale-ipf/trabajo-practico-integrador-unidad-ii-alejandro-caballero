@@ -84,27 +84,22 @@ body{
 
 header{
   background-image: url('../img/fondo_nav_ipf.png');
-  background-size: 1296px 112px;
+  background-size: 100% 100%;
+  background-position: cover;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-.nav-item{
-  display: flex;
-  align-items: center;
-}
-
 .nav-item a{
-  color: #08512b;
+  color: #262a2d;
+  display: flex;
+  text-align: center;
+  font-size: 24px;
 }
 
 .nav-item a:hover{
   color: #15a71e;
   transition: 0.3s;
 }
-
-/* #main{
-  box-shadow: 0 1px 1px rgba(0,0,0,0.3);
-} */
 
 .main p{
   padding: 0;
@@ -170,25 +165,6 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.inicio-servicios{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), 
-                      url('../img/servicios-ipf.jpeg');
-    background-size: cover;
-    background-position: center;
-    padding: 200px 0;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-
-}
-
-.inicio-servicios .card{
-  margin: auto;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-  background-color: transparent;
-  backdrop-filter: blur(5px);
-  color:#fcf5e5
-}
-
 .inicio-ofertas-academicas .card{
   margin: auto;
   text-align: center;
@@ -214,3 +190,7 @@ footer {
             height: 100%;
             width: 100%;
         }
+
+svg{
+  color: #068587;
+}
