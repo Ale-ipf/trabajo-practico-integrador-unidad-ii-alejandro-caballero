@@ -82,7 +82,7 @@ footer {
 	margin: 0;
 	box-sizing: border-box;
 }
-.animacion-buenarda body {
+.animacion-mecatronica body {
 	min-height: 100vh;
 	display: grid;
 	place-items: center;
@@ -97,19 +97,19 @@ footer {
 		#008000);
 }
 
-.animacion-buenarda h1 {
+.animacion-mecatronica h1 {
 	font-size: 5.25vmin;
 	text-align: start;
 	color: white;
 }
-.animacion-buenarda p {
+.animacion-mecatronica p {
 	font-size: max(10pt, 2.5vmin);
 	line-height: 1.4;
 	color: #0e390e;
 	margin-bottom: 1.5rem;
 }
 
-.animacion-buenarda .wrap {
+.animacion-mecatronica .wrap {
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -132,21 +132,21 @@ footer {
 	position: relative;
 	overflow: hidden;
 }
-.animacion-buenarda .overlay {
+.animacion-mecatronica .overlay {
 	position: relative;
 	display: flex;
 	width: 100%;
 	height: 100%;
-	padding: 1rem 0.75rem;
+	padding: 1rem 0.5rem;
 	background: #186218;
 	transition: 0.4s ease-in-out;
 	z-index: 1;
 }
-.animacion-buenarda .overlay-content {
+.animacion-mecatronica .overlay-content {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 15vmin;
+	width: 150px;
 	height: 100%;
 	padding: 0.5rem 0 0 0.5rem;
 	border: 3px solid;
@@ -160,26 +160,26 @@ footer {
 	transition: 0.3s ease-in-out 0.2s;
 	z-index: 1;
 }
-.animacion-buenarda .image-content {
+.animacion-mecatronica .image-content {
 	position: absolute;
 	top: 0;
 	right: 0;
-	width: 550px;
+	width: 600px;
 	height: 100%;
-	background-image: url("../img/comedor2-ipf.jpg");
+	background-image: url("../img/tecnicatura-mecatronica-ipf.jpg");
 	background-size: cover;
 	transition: 0.3s ease-in-out;
 	/* border: 1px solid green; */
 }
 
-.animacion-buenarda .inset {
+.animacion-mecatronica .inset {
 	max-width: 50%;
 	margin: 0.25em 1em 1em 0;
 	border-radius: 0.25em;
 	float: left;
 }
 
-.animacion-buenarda .dots {
+.animacion-mecatronica .dots {
 	position: absolute;
 	bottom: 1rem;
 	right: 2rem;
@@ -191,16 +191,8 @@ footer {
 	height: 4vmin;
 	transition: 0.3s ease-in-out 0.3s;
 }
-.animacion-buenarda .dot {
-	width: 1rem;
-	height: 1rem;
-	background: yellow;
-	border: 1px solid indigo;
-	border-radius: 50%;
-	transition: 0.3s ease-in-out 0.3s;
-}
 
-.animacion-buenarda .text {
+.animacion-mecatronica .text {
 	display: grid;
 	position: absolute;
 	top: 0;
@@ -212,37 +204,34 @@ footer {
 	box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / 0.4);
 	overflow-y: scroll;
 }
-.animacion-buenarda .tree {
+.animacion-mecatronica .tree {
 	place-self: center;
 	width: calc(50px + 2vw);
 }
 
-.animacion-buenarda .wrap:hover .overlay {
+.animacion-mecatronica .wrap:hover .overlay {
 	transform: translateX(-60vmin);
 }
-.animacion-buenarda .wrap:hover .image-content {
+.animacion-mecatronica .wrap:hover .image-content {
 	width: 30vmin;
 }
-.animacion-buenarda .wrap:hover .overlay-content {
+.animacion-mecatronica .wrap:hover .overlay-content {
 	border: none;
 	transition-delay: 0.2s;
 	transform: translateX(60vmin);
 }
-.animacion-buenarda .wrap:hover .dots {
+.animacion-mecatronica .wrap:hover .dots {
 	transform: translateX(1rem);
-}
-.animacion-buenarda .wrap:hover .dots .dot {
-	background: white;
 }
 
 /* Animations and timing delays */
-.animacion-buenarda .animate {
+.animacion-mecatronica .animate {
 	animation-duration: 0.7s;
 	animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
 	animation-fill-mode: backwards;
 }
 /* Pop In */
-.animacion-buenarda .pop {
+.animacion-mecatronica .pop {
 	animation-name: pop;
 }
 @keyframes pop {
@@ -257,7 +246,7 @@ footer {
 }
 
 /* Slide In */
-.animacion-buenarda .slide {
+.animacion-mecatronica .slide {
 	animation-name: slide;
 }
 @keyframes slide {
@@ -272,7 +261,7 @@ footer {
 }
 
 /* Slide Left */
-.animacion-buenarda .slide-left {
+.animacion-mecatronica .slide-left {
 	animation-name: slide-left;
 }
 @keyframes slide-left {
@@ -286,7 +275,7 @@ footer {
 	}
 }
 
-.animacion-buenarda .slide-up {
+.animacion-mecatronica .slide-up {
 	animation-name: slide-up;
 }
 @keyframes slide-up {
@@ -300,27 +289,322 @@ footer {
 	}
 }
 
-.animacion-buenarda .delay-1 {
+.animacion-mecatronica .delay-1 {
 	animation-delay: 0.3s;
 }
-.animacion-buenarda .delay-2 {
+.animacion-mecatronica .delay-2 {
 	animation-delay: 0.6s;
 }
-.animacion-buenarda .delay-3 {
+.animacion-mecatronica .delay-3 {
 	animation-delay: 0.9s;
 }
-.animacion-buenarda .delay-4 {
+.animacion-mecatronica .delay-4 {
 	animation-delay: 1.2s;
 }
-.animacion-buenarda .delay-5 {
+.animacion-mecatronica .delay-5 {
 	animation-delay: 1.5s;
 }
-.animacion-buenarda .delay-6 {
+.animacion-mecatronica .delay-6 {
 	animation-delay: 1.8s;
 }
-.animacion-buenarda .delay-7 {
+.animacion-mecatronica .delay-7 {
 	animation-delay: 2.1s;
 }
-.animacion-buenarda .delay-8 {
+.animacion-mecatronica .delay-8 {
 	animation-delay: 2.4s;
+}
+
+.animacion-ddsoftwarem body {
+	min-height: 100vh;
+	display: grid;
+	place-items: center;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(
+		to right,
+		#008000,
+		#00e600,
+		#b3ffb3,
+		#00e600,
+		#008000);
+}
+
+.animacion-ddsoftwarem h1 {
+	font-size: 5.25vmin;
+	text-align: start;
+	color: white;
+}
+.animacion-ddsoftwarem p {
+	font-size: max(10pt, 2.5vmin);
+	line-height: 1.4;
+	color: #0e390e;
+	margin-bottom: 1.5rem;
+}
+
+.animacion-ddsoftwarem .wrap {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	width: 800px;
+	height: 400px;
+	margin: 2rem auto;
+	border: 8px solid;
+	border-image: linear-gradient(
+			-50deg,
+			green,
+			#00b300,
+			forestgreen,
+			green,
+			lightgreen,
+			#00e600,
+			green
+		)
+		1;
+	transition: 0.3s ease-in-out;
+	position: relative;
+	overflow: hidden;
+}
+.animacion-ddsoftwarem .overlay {
+	position: relative;
+	display: flex;
+	width: 100%;
+	height: 100%;
+	padding: 1rem 0.5rem;
+	background: #186218;
+	transition: 0.4s ease-in-out;
+	z-index: 1;
+}
+.animacion-ddsoftwarem .overlay-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 150px;
+	height: 100%;
+	padding: 0.5rem 0 0 0.5rem;
+	border: 3px solid;
+	border-image: linear-gradient(
+			to bottom,
+			#aea724 5%,
+			forestgreen 35% 65%,
+			#aea724 95%
+		)
+		0 0 0 100%;
+	transition: 0.3s ease-in-out 0.2s;
+	z-index: 1;
+}
+
+.animacion-ddsoftwarem .image-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 500px;
+	height: 100%;
+	background-image: url("../img/tecnicatura-ddsoftwarem-ipf.jpg");
+	background-size: cover;
+	transition: 0.3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.animacion-ddsoftwarem .inset {
+	max-width: 50%;
+	margin: 0.25em 1em 1em 0;
+	border-radius: 0.25em;
+	float: left;
+}
+
+.animacion-ddsoftwarem .dots {
+	position: absolute;
+	bottom: 1rem;
+	right: 2rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 70px;
+	height: 4vmin;
+	transition: 0.3s ease-in-out 0.3s;
+}
+
+.animacion-ddsoftwarem .text {
+	display: grid;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vmin;
+	height: 100%;
+	padding: 3vmin 4vmin;
+	background: #fff;
+	box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / 0.4);
+	overflow-y: scroll;
+}
+.animacion-ddsoftwarem .tree {
+	place-self: center;
+	width: calc(50px + 2vw);
+}
+
+.animacion-ddsoftwarem .wrap:hover .overlay {
+	transform: translateX(-60vmin);
+}
+.animacion-ddsoftwarem .wrap:hover .image-content {
+	width: 30vmin;
+}
+.animacion-ddsoftwarem .wrap:hover .overlay-content {
+	border: none;
+	transition-delay: 0.2s;
+	transform: translateX(60vmin);
+}
+.animacion-ddsoftwarem .wrap:hover .dots {
+	transform: translateX(1rem);
+}
+
+/* Animations and timing delays */
+.animacion-ddsoftwarem .animate {
+	animation-duration: 0.7s;
+	animation-timing-function: cubic-bezier(0.26, 0.53, 0.74, 1.48);
+	animation-fill-mode: backwards;
+}
+/* Pop In */
+.animacion-ddsoftwarem .pop {
+	animation-name: pop;
+}
+@keyframes pop {
+	0% {
+		opacity: 0;
+		transform: scale(0.5, 0.5);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1, 1);
+	}
+}
+
+/* Slide In */
+.animacion-ddsoftwarem .slide {
+	animation-name: slide;
+}
+@keyframes slide {
+	0% {
+		opacity: 0;
+		transform: translate(4em, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+/* Slide Left */
+.animacion-ddsoftwarem .slide-left {
+	animation-name: slide-left;
+}
+@keyframes slide-left {
+	0% {
+		opacity: 0;
+		transform: translate(-40px, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}
+
+.animacion-ddsoftwarem .slide-up {
+	animation-name: slide-up;
+}
+@keyframes slide-up {
+	0% {
+		opacity: 0;
+		transform: translateY(3em);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+.animacion-ddsoftwarem .delay-1 {
+	animation-delay: 0.3s;
+}
+.animacion-ddsoftwarem .delay-2 {
+	animation-delay: 0.6s;
+}
+.animacion-ddsoftwarem .delay-3 {
+	animation-delay: 0.9s;
+}
+.animacion-ddsoftwarem .delay-4 {
+	animation-delay: 1.2s;
+}
+.animacion-ddsoftwarem .delay-5 {
+	animation-delay: 1.5s;
+}
+.animacion-ddsoftwarem .delay-6 {
+	animation-delay: 1.8s;
+}
+.animacion-ddsoftwarem .delay-7 {
+	animation-delay: 2.1s;
+}
+.animacion-ddsoftwarem .delay-8 {
+	animation-delay: 2.4s;
+}
+
+.animacion-quimica-industrial .image-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 500px;
+	height: 100%;
+	background-image: url("../img/tecnicatura-quimica-industrial-ipf.jpg");
+	background-size: cover;
+	transition: 0.3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.animacion-quimica-industrial .overlay-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 150px;
+	height: 100%;
+	padding: 0.5rem 0 0 0.5rem;
+	border: 3px solid;
+	border-image: linear-gradient(
+			to bottom,
+			#aea724 5%,
+			forestgreen 35% 65%,
+			#aea724 95%
+		)
+		0 0 0 100%;
+	transition: 0.3s ease-in-out 0.2s;
+	z-index: 1;
+}
+
+.animacion-telecomunicaciones .image-content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 500px;
+	height: 100%;
+	background-image: url("../img/tecnicatura-telecomunicaciones-ipf.jpg");
+	background-size: cover;
+	transition: 0.3s ease-in-out;
+	/* border: 1px solid green; */
+}
+
+.animacion-telecomunicaciones .overlay-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 150px;
+	height: 100%;
+	padding: 0.5rem 0 0 0.5rem;
+	border: 3px solid;
+	border-image: linear-gradient(
+			to bottom,
+			#aea724 5%,
+			forestgreen 35% 65%,
+			#aea724 95%
+		)
+		0 0 0 100%;
+	transition: 0.3s ease-in-out 0.2s;
+	z-index: 1;
 }

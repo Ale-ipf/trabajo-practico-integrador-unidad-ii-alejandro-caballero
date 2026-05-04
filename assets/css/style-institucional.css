@@ -18,17 +18,16 @@ body{
 
 header{
   background-image: url('../img/fondo_nav_ipf.png');
-  background-size: 1296px 112px;
+  background-size: 100% 100%;
+  background-position: cover;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
-
-.nav-item{
-  display: flex;
-  align-items: center;
 }
 
 .nav-item a{
   color: #08512b;
+  display: flex;
+  text-align: center;
+  font-size: 18px;
 }
 
 .nav-item a:hover{
